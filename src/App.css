@@ -1,0 +1,157 @@
+body {
+   background-image: url('https://webgradients.com/public/webgradients_png/073%20Love%20Kiss.png');
+   font-size: 16px;
+   font-family: 'PT Sans', sans-serif;
+}
+
+.newRestoButton {
+  background: darkblue;
+  color: white;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding:10px;
+}
+
+.App {
+  margin: 28px;
+  background-color: #FBFFFE;
+  height: 100vh;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.Title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-family: 'Miriam Libre', sans-serif;
+  font-size: 4.236em;
+  color: #071E22;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #FAA916; }
+}
+
+button {
+  color: #FAA916;
+  background: #FBFFFE;
+  border: solid 2px #FAA916;
+  padding: 10px;
+  margin: 20px;
+  font-size: 1em;
+}
+
+button:hover {
+  border-color: #F40049;
+  color: #F40049;
+}
+
+.hidden {
+  display: none;
+}
+
+
+.Taco {
+  width: 250px;
+  height: 250px;
+  position:absolute;
+	top:-30%; /* Set initial position for each image off-screen left -- adjust according to image width */
+	animation:mymove 5s infinite;	/* total animation time for each image is 8 seconds, loops forever */
+	animation-direction:normal;	
+	/* Firefox */
+	-moz-animation:mymove 5s infinite;
+	-moz-animation-direction:normal;		
+	/* Safari, Chrome, and Webkit Opera */
+	-webkit-animation:mymove 5s infinite;
+	-webkit-animation-direction:normal;	
+	/* Presto Opera */
+	-o-animation:mymove 5s infinite;
+  -o-animation-direction:normal;
+}
+
+.A {
+  left: 0;
+  animation-delay:1.5s;
+	-webkit-animation-delay: 1.5s;
+
+}
+
+.B{
+  left: 20%;
+  animation-delay:0s;
+	-webkit-animation-delay: 0s;
+}
+
+.C{
+  left: 40%;
+	animation-delay:2.5s;
+	-webkit-animation-delay: 2.5s;
+}
+
+.D{
+  left: 60%;
+  animation-delay:4.5s;
+	-webkit-animation-delay: 4.5s;
+}
+
+.E{
+  left: 80%;
+	animation-delay:3.5s;
+	-webkit-animation-delay: 3.5s;
+}
+
+
+
+@keyframes mymove
+	{
+	from {top:-10%;}	/*off-screen left (adjust for image width)*/
+	to {top:100%;}		/*off-screen right*/
+	}
+
+@-moz-keyframes mymove /* Firefox */
+	{
+    from {top:-10%;}	/*off-screen left (adjust for image width)*/
+    to {top:100%;}	
+	}
+
+@-webkit-keyframes mymove /* Safari, Chrome, and Webkit Opera */
+	{
+    from {top:-10%;}	/*off-screen left (adjust for image width)*/
+    to {top:100%;}	
+	}
+
+@-o-keyframes mymove /* Presto Opera */
+	{
+    from {top:-10%;}	/*off-screen left (adjust for image width)*/
+    to {top:100%;}	
+  } 
