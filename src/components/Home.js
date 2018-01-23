@@ -6,7 +6,6 @@ class Home extends Component {
   getResto = () => {
     axios.get('http://localhost:3001/api/v1/restaurants.json')
     .then(response => {
-      console.log(response)
       this.props.showResto(response.data)
     })
     .catch(error => console.log(error))

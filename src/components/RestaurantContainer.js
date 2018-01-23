@@ -14,7 +14,6 @@ class RestaurantContainer extends Component {
   componentDidMount() {
     axios.get('http://localhost:3001/api/v1/restaurants.json')
     .then(response => {
-      console.log(response)
       this.setState({restaurants: response.data})
     })
     .catch(error => console.log(error))
@@ -44,13 +43,11 @@ class RestaurantContainer extends Component {
   render() {
     return (
       <div>
-        {this.state.restaurants.map((resto) => {
-          return (<Restaurant resto={resto} key={resto.id} />)
-        })}  
-        {/* <button className="newRestoButton"
+        <h1>{this.state.restaurants.name}</h1>
+        <button className="newRestoButton"
         onClick={this.addNewResto}>
           New Idea
-        </button>   */}
+        </button>  
       </div>
      
       

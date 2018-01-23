@@ -68,7 +68,7 @@ button {
   border: solid 2px #FAA916;
   padding: 10px;
   margin: 20px;
-  font-size: 1em;
+  font-size: 1.5em;
 }
 
 button:hover {
@@ -85,7 +85,7 @@ button:hover {
   width: 250px;
   height: 250px;
   position:absolute;
-	top:-30%; /* Set initial position for each image off-screen left -- adjust according to image width */
+	top:-40%; /* Set initial position for each image off-screen left -- adjust according to image width */
 	animation:mymove 5s infinite;	/* total animation time for each image is 8 seconds, loops forever */
 	animation-direction:normal;	
 	/* Firefox */
@@ -135,23 +135,23 @@ button:hover {
 @keyframes mymove
 	{
 	from {top:-10%;}	/*off-screen left (adjust for image width)*/
-	to {top:100%;}		/*off-screen right*/
+	to {top:110%;}		/*off-screen right*/
 	}
 
 @-moz-keyframes mymove /* Firefox */
 	{
     from {top:-10%;}	/*off-screen left (adjust for image width)*/
-    to {top:100%;}	
+    to {top:110%;}	
 	}
 
 @-webkit-keyframes mymove /* Safari, Chrome, and Webkit Opera */
 	{
     from {top:-10%;}	/*off-screen left (adjust for image width)*/
-    to {top:100%;}	
+    to {top:110%;}	
 	}
 
 @-o-keyframes mymove /* Presto Opera */
 	{
     from {top:-10%;}	/*off-screen left (adjust for image width)*/
-    to {top:100%;}	
+    to {top:110%;}	
   } 

@@ -35,7 +35,7 @@ class App extends Component {
         <img src={taco} alt={"taco"} className="Taco E"/>
       </div>
       <div className="App">
-      {this.state.clicked ? <RestaurantContainer /> : <Home showResto={this.showResto} />}
+      {this.state.clicked ? <RestaurantContainer restaurant={this.state.restaurants} /> : <Home showResto={this.showResto} />}
       </div>
     </div>
     );
