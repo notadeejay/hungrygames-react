@@ -1,25 +1,16 @@
-body {
+body, html {
    background-image: url('https://webgradients.com/public/webgradients_png/073%20Love%20Kiss.png');
-   font-size: 16px;
-   font-family: 'PT Sans', sans-serif;
+   font-size: 20px;
+   font-family: 'Roboto', sans-serif;
+   text-transform: lowercase;
+   padding: 10px;
+   color: #071E22;
 }
 
-.newRestoButton {
-  background: darkblue;
-  color: white;
-  border: none;
-  font-size: 18px;
-  cursor: pointer;
-  margin-right: 10px;
-  margin-left: 10px;
-  padding:10px;
-}
 
 .App {
-  margin: 28px;
   background-color: #FBFFFE;
-  height: 100vh;
-  padding: 50px;
+  height: 97vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,6 +30,7 @@ body {
 
 h1 {
   font-family: 'Miriam Libre', sans-serif;
+  text-transform: uppercase;
   font-size: 4.236em;
   color: #071E22;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -64,11 +56,14 @@ h1 {
 
 button {
   color: #FAA916;
+  text-transform: lowercase;
   background: #FBFFFE;
   border: solid 2px #FAA916;
   padding: 10px;
-  margin: 20px;
-  font-size: 1.5em;
+  margin: 30px;
+  font-size: 1.68em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
 }
 
 button:hover {
@@ -135,23 +130,82 @@ button:hover {
 @keyframes mymove
 	{
 	from {top:-10%;}	/*off-screen left (adjust for image width)*/
-	to {top:110%;}		/*off-screen right*/
+	to {top:80%;}		/*off-screen right*/
 	}
 
 @-moz-keyframes mymove /* Firefox */
 	{
     from {top:-10%;}	/*off-screen left (adjust for image width)*/
-    to {top:110%;}	
+    to {top:80%;}	
 	}
 
 @-webkit-keyframes mymove /* Safari, Chrome, and Webkit Opera */
 	{
     from {top:-10%;}	/*off-screen left (adjust for image width)*/
-    to {top:110%;}	
+    to {top:80%;}	
 	}
 
 @-o-keyframes mymove /* Presto Opera */
 	{
     from {top:-10%;}	/*off-screen left (adjust for image width)*/
-    to {top:110%;}	
+    to {top:80%;}	
   } 
+
+   .restaurant {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 70%;
+    overflow-wrap: normal;
+   }
+
+  .restaurant h1 {
+    font-size: 6.654em;
+    overflow-wrap: normal;
+  }
+
+
+  .details {
+    font-size: 1.618em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    font-weight: 300;
+  }
+
+  p span {
+    margin-right: 16px;
+  }
+
+
+  .description {
+    font-size: 2.618em;
+    margin: 5px;
+    font-weight: 300;
+  }
+
+  .details p:nth-child(2) {
+   position: absolute;
+   left: 30%;
+  }
+  
+  .restaurant h2 {
+    font-size: 2.618em;
+    margin: 100px 0px 0px 0px;
+    font-family: 'Miriam Libre', sans-serif;
+    text-transform: uppercase;
+  }
+
+  button.newResto {
+   margin: 60px 20px 60px 0;
+  }
+ 
+  a {
+    text-decoration: none;
+    color: #F40049;
+  }
+
+  a:visited {
+    color: #FAA916;
+  }

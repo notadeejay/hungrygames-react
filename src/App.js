@@ -19,7 +19,6 @@ class App extends Component {
 
   showResto = (res) => {
     this.setState({
-      restaurants: res,
       clicked: true,
     })
   }
@@ -28,14 +27,18 @@ class App extends Component {
     return (
     <div>
       <div className="Main">
+      {this.state.clicked ? null :
+      <div>
         <img src={taco} alt={"taco"} className="Taco A"/> 
         <img src={taco} alt={"taco"} className="Taco B"/> 
         <img src={taco} alt={"taco"} className="Taco C"/> 
         <img src={taco} alt={"taco"} className="Taco D"/> 
         <img src={taco} alt={"taco"} className="Taco E"/>
       </div>
+      }
+        </div>
       <div className="App">
-      {this.state.clicked ? <RestaurantContainer restaurant={this.state.restaurants} /> : <Home showResto={this.showResto} />}
+      {this.state.clicked ? <RestaurantContainer  /> : <Home showResto={this.showResto} />}
       </div>
     </div>
     );

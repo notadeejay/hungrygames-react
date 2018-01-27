@@ -7,7 +7,7 @@ class RestaurantContainer extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      restaurants: []
+      restaurants: {}
     }
   }
 
@@ -43,11 +43,7 @@ class RestaurantContainer extends Component {
   render() {
     return (
       <div>
-        <h1>{this.state.restaurants.name}</h1>
-        <button className="newRestoButton"
-        onClick={this.addNewResto}>
-          New Idea
-        </button>  
+        <Restaurant resto={this.state.restaurants}/>
       </div>
      
       
