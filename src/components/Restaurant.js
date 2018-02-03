@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Restaurant = ({resto}) =>
+const Restaurant = ({resto, openForm}) =>
   <div className="restaurant" key={resto.id}>
     <h1>{resto.name}</h1>
     <p className="description">{resto.description}</p>
@@ -17,8 +17,8 @@ const Restaurant = ({resto}) =>
         onClick={this.addNewResto}>
         Try Again
       </button>  
-      <button className="newResto"
-        onClick={this.addNewResto}>
+      <button className="getResto"
+        onClick={openForm}>
         Add a new restaurant
       </button>  
   </div>

@@ -209,3 +209,56 @@ button:hover {
   a:visited {
     color: #FAA916;
   }
+
+  .form {
+    width: 600px;
+    height: 600px;
+    background-color: #F40049;
+    box-shadow: 10px 10px 5px 0px rgba(71,68,72,1);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 35%;
+    top: 25%;
+    align-content: centre;
+  }
+
+  form {
+    margin: 80px auto;
+  }
+
+  .input {
+  background: rgba(0,0,0,0.2);
+  display: block;
+  height: 50px;
+  width: 500px;
+  margin: 10px 0;
+  padding: 5px 10px;
+  border-width: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  transform: translateX(0);
+}
+
+  select {
+    background: rgba(0,0,0,0.2);
+    border: none;
+    box-shadow: none;
+    outline: none;
+  }
+
+  button.submit {
+    width: 400px;
+    font-size: 120%;
+    height: 80px;
+    border: none;
+    box-shadow: 0 5px rgba(0,0,0,0.5);
+    transition: all 0.1s, transform 0s 0.6s;
+  }
+  ::placeholder {
+    color:#FBFFFE;
+    font-family: 'Miriam Libre', sans-serif;
+    font-weight: 300;
+  }
